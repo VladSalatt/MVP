@@ -13,6 +13,9 @@
 		EA34806426E0B7DB00EC3A69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA34806226E0B7DB00EC3A69 /* Main.storyboard */; };
 		EA34806626E0B7DC00EC3A69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA34806526E0B7DC00EC3A69 /* Assets.xcassets */; };
 		EA34806926E0B7DC00EC3A69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA34806726E0B7DC00EC3A69 /* LaunchScreen.storyboard */; };
+		EA34807126E0B81700EC3A69 /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34807026E0B81700EC3A69 /* TrafficLight.swift */; };
+		EA34807326E0B87800EC3A69 /* TrafficLightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34807226E0B87800EC3A69 /* TrafficLightService.swift */; };
+		EA34807526E0B9B600EC3A69 /* TrafficLightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34807426E0B9B600EC3A69 /* TrafficLightPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EA34806526E0B7DC00EC3A69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA34806826E0B7DC00EC3A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA34806A26E0B7DC00EC3A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA34807026E0B81700EC3A69 /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		EA34807226E0B87800EC3A69 /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
+		EA34807426E0B9B600EC3A69 /* TrafficLightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		EA34805B26E0B7DB00EC3A69 /* TestMVP */ = {
 			isa = PBXGroup;
 			children = (
+				EA34807626E0C26300EC3A69 /* DataSource */,
+				EA34807826E0C29100EC3A69 /* Models */,
+				EA34807926E0C29F00EC3A69 /* Views */,
+				EA34807A26E0C2AD00EC3A69 /* Presenter */,
 				EA34805C26E0B7DB00EC3A69 /* AppDelegate.swift */,
 				EA34805E26E0B7DB00EC3A69 /* SceneDelegate.swift */,
-				EA34806026E0B7DB00EC3A69 /* ViewController.swift */,
 				EA34806226E0B7DB00EC3A69 /* Main.storyboard */,
 				EA34806526E0B7DC00EC3A69 /* Assets.xcassets */,
 				EA34806726E0B7DC00EC3A69 /* LaunchScreen.storyboard */,
 				EA34806A26E0B7DC00EC3A69 /* Info.plist */,
 			);
 			path = TestMVP;
+			sourceTree = "<group>";
+		};
+		EA34807626E0C26300EC3A69 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EA34807226E0B87800EC3A69 /* TrafficLightService.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EA34807826E0C29100EC3A69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA34807026E0B81700EC3A69 /* TrafficLight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA34807926E0C29F00EC3A69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA34806026E0B7DB00EC3A69 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA34807A26E0C2AD00EC3A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EA34807426E0B9B600EC3A69 /* TrafficLightPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA34807126E0B81700EC3A69 /* TrafficLight.swift in Sources */,
 				EA34806126E0B7DB00EC3A69 /* ViewController.swift in Sources */,
+				EA34807326E0B87800EC3A69 /* TrafficLightService.swift in Sources */,
+				EA34807526E0B9B600EC3A69 /* TrafficLightPresenter.swift in Sources */,
 				EA34805D26E0B7DB00EC3A69 /* AppDelegate.swift in Sources */,
 				EA34805F26E0B7DB00EC3A69 /* SceneDelegate.swift in Sources */,
 			);
