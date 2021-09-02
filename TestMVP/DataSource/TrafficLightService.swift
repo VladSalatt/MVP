@@ -7,8 +7,10 @@
 
 import Foundation
 
+/// Обычный класс сервиса, который играет роль data provider
 class TrafficLightService {
     
+    // Возвращает в callback'e модельку по имени
     func getTrafficLight(colorName: (String), callBack: (TrafficLight?) -> Void) {
         let trafficLights = [
             TrafficLight(colorName: "Red", description: "Stop"),

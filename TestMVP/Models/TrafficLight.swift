@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Обычная модель 
 struct TrafficLight {
     let colorName: String
     let description: String

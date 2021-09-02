@@ -9,8 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-
+    // Собственно сам презентер (у которого есть свой инстанс класса сервиса), который принадлежит этому VC
     private let trafficLightPresenter = TrafficLightPresenter(trafficLightService: TrafficLightService())
     
     // MARK: - UI
@@ -61,6 +60,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         
+        // Установка self в качестве делегата презентера
         trafficLightPresenter.setViewDelegate(trafficLightViewDelegate: self)
     }
     
@@ -102,6 +102,8 @@ class ViewController: UIViewController {
     }
 }
 
+
+// Реализация протокола
 extension ViewController: TrafficLightViewDelegate {
     func displayTrafficLights(description: (String)) {
         lable.text = description
